@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Couleur de fond légère */
+    color: #333;
+}
+
+header {
+    background: #4b79a1; /* Un bleu apaisant */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe600; /* Jaune vif au survol */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background: #ffe600; /* Jaune vif */
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-button:hover {
+    background: #ffd700; /* Un jaune plus foncé au survol */
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #2ecc71; /* Un vert frais */
+    color: white;
+    padding: 15px 30px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #27ae60; /* Un vert plus foncé au survol */
+}
+
+footer {
+    background: #34495e; /* Un gris foncé */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.motivation {
+    background: #ecf0f1; /* Un gris très clair */
+    padding: 20px;
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
+

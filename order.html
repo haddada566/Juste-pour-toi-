@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Commander</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="products.html">Boutique</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Confirmer votre Commande</h1>
+        <form id="order-form">
+            <label for="first-name">Prénom :</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Nom :</label>
+            <input type="text" id="last-name" required>
+
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="text" id="phone" required>
+
+            <button type="submit">Confirmer la Commande</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ma Boutique</p>
+    </footer>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Commande confirmée !");
+            // Ajoutez ici la logique pour traiter la commande
+        });
+    </script>
+</body>
+</html>

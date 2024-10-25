@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boutique - Accueil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" style="cursor: pointer;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="products.html">Boutique</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher des produits...">
+            <button id="search-button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Bienvenue dans notre boutique</h1>
+            <p>Découvrez nos produits de mode tendance</p>
+            <a href="products.html" class="btn">Voir la Boutique</a>
+        </div>
+
+        <section class="motivation">
+            <h2>Notre Engagement</h2>
+            <p>Nous nous engageons à offrir des produits de qualité qui vous inspirent et vous motivent.</p>
+        </section>
+
+        <section class="buttons-container">
+            <a href="products-men.html" class="button">Homme</a>
+            <a href="products-women.html" class="button">Femme</a>
+        </section>
+
+        <section class="description">
+            <h2>Notre Histoire</h2>
+            <p>Nous sommes passionnés par la mode et la qualité, offrant des produits qui vous ressemblent.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ma Boutique</p>
+    </footer>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value;
+            window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
+        });
+    </script>
+
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        header { background: #2c3e50; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .hero { height: 400px; background: url('images/hero.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .buttons-container { display: flex; justify-content: center; margin-top: 20px; }
+        .button { padding: 20px; margin: 0 10px; background: #007BFF; color: white; text-decoration: none; }
+        .button:hover { background: #0056b3; }
+        footer { text-align: center; padding: 1rem; background: #2c3e50; color: white; }
+    </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

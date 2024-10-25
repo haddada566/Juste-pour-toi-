@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Détails du Produit</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="products.html">Boutique</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <img id="product-image" src="" alt="">
+            <h1 id="product-name"></h1>
+            <p id="product-description"></p>
+            <p id="product-price"></p>
+            <h3>Choisir une taille :</h3>
+            <select id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <h3>Choisir une couleur :</h3>
+            <select id="color-select">
+                <option value="rouge">Rouge</option>
+                <option value="bleu">Bleu</option>
+                <option value="vert">Vert</option>
+                <option value="noir">Noir</option>
+            </select>
+            <button class="btn">Ajouter au Panier</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ma Boutique</p>
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('product-name').innerText = params.get('name');
+        document.getElementById('product-description').innerText = params.get('description');
+        document.getElementById('product-price').innerText = `Prix : ${params.get('price')}€`;
+        document.getElementById('product-image').src = params.get('image');
+    </script>
+</body>
+</html>
+
+
+
+
+
+

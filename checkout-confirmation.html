@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Confirmation de Commande</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="products.html">Boutique</a></li>
+                <li><a href="cart.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Confirmation de Votre Commande</h1>
+        <div id="order-details">
+            <p><strong>Prénom :</strong> <span id="firstname"></span></p>
+            <p><strong>Nom :</strong> <span id="name"></span></p>
+            <p><strong>Numéro de Téléphone :</strong> <span id="phone"></span></p>
+            <p><strong>Adresse :</strong> <span id="address"></span></p>
+        </div>
+        <p>Merci pour votre commande ! Nous vous contacterons bientôt.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ma Boutique</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('firstname').innerText = urlParams.get('firstname');
+        document.getElementById('name').innerText = urlParams.get('name');
+        document.getElementById('phone').innerText = urlParams.get('phone');
+        document.getElementById('address').innerText = urlParams.get('address');
+    </script>
+</body>
+</html>
